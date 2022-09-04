@@ -1,0 +1,65 @@
+body {
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#search {
+    width: 309px;
+    height: 15px;
+    padding: 1px 2px;
+    background-color: field;
+    cursor: text;
+    writing-mode: horizontal-tb !important;
+    border-width:1px;
+    border-style: inset;
+    border-spacing: 2px;
+    border-color:  -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+
+#search ~ input[type=submit] {
+    background-color: buttonface;
+    border: 1px inset buttonborder;
+}
+
+table {
+    border-collapse: separate;
+}
+
+td {
+    padding: 1px;
+}
+
+
+a {
+    color: #551a8b;
+}
+
+a.link-blue {
+    color: #2400ee;
+
+}
+/* gercek boyutu 15 pixel degil, degisik bir resetter kullanmislar aslinda 23.8 px */
+input[type=hidden] ~ input[type=text] {
+    padding: 1px 2px;
+    width: 160px;
+    height: 23px;
+    box-sizing: border-box;
+}
+
+
+input[type=hidden] ~ input[type=text] ~ input[type=submit] {
+    padding: 1px 6px;
+    border: 2px inset #737e7c;
+    border-radius: 2px;
+    background-color: #efefef;
+}
+
+input[type=hidden] ~ input[type=text]~input[type=submit]:hover {
+    background-color:#dfdfdf;
+}   
+
+#copyright {
+    font-weight: 540;
+}
